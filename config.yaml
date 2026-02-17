@@ -1,0 +1,29 @@
+# Embedding
+embedding_model: "BAAI/bge-small-en-v1.5"
+
+# LLM (LM Studio)
+llm_base_url: "http://localhost:1234/v1"
+llm_model: "local-model"
+llm_temperature: 0.3
+llm_max_tokens: 1024
+
+# Retrieval
+dense_top_k: 30
+sparse_top_k: 30
+fusion_top_k: 10
+final_top_k: 5
+rrf_k: 60
+
+# Data
+data_path: "data/products.json"
+dense_index_dir: "indices/dense"
+bm25_index_path: "indices/bm25_index.pkl"
+product_lookup_path: "indices/product_lookup.json"
+
+# Dataset download
+categories:
+  - "Electronics"
+  - "Cell_Phones_and_Accessories"
+  - "Toys_and_Games"
+  - "Arts_Crafts_and_Sewing"
+products_per_category: 1250

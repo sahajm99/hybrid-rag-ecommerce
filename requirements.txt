@@ -1,0 +1,23 @@
+# Core
+pyyaml>=6.0
+typer>=0.9.0
+rich>=13.0.0
+
+# Embeddings & Vector Store
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# Sparse Retrieval
+rank-bm25>=0.2.2
+
+# LLM (OpenAI-compatible client for LM Studio)
+openai>=1.0.0
+
+# Data
+huggingface-hub>=0.20.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+tqdm>=4.65.0
+
+# Testing
+pytest>=7.4.0
